@@ -157,6 +157,7 @@ class Application {
             
         }
         sendEmail(message)
+        next(err)
     });
         // not found error
         this.#app.use((err, req, res, next) => {
